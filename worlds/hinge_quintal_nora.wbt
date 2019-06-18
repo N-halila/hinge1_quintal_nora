@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation 0.9647541489245165 -0.26305336996534545 0.007235791788539646 0.05700827376959139
-  position 0 1.867872871680956e-16 3.3648606275511246
+  orientation -0.99563452526883 0.08995598249070143 0.024896050024933683 0.5422535847687322
+  position 0.029265096906776922 1.1575000864521796 1.2743847594287083
 }
 TexturedBackground {
 }
@@ -27,6 +27,9 @@ Solid {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
+        axis 0 1 0
+        anchor 0 0.255 0
+        staticFriction 0.1
       }
       endPoint Solid {
         translation 0 0.255 0
@@ -42,6 +45,8 @@ Solid {
             }
           }
         ]
+        physics Physics {
+        }
       }
     }
   ]
